@@ -56,6 +56,16 @@ def chatbot(question):
     # Return the answer
     return most_relevant_sentence
 
+def app():
+    st.title("Face Detection using Viola-Jones Algorithm")
+    st.write("Press the button below to start detecting faces from your webcam")
+    # Add a button to start detecting faces
+    if st.button("Detect Faces"):
+        # Call the detect_faces function
+        detect_faces()
+if __name__ == "__main__":
+    app()
+
 def main():
     st.title("Chatbot")
     st.write("Hello! I'm a chatbot. Ask me anything about the topic in the text file.")
